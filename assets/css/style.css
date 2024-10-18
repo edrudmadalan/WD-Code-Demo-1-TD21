@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+/* Reset Anchor Code */
+a {
+  color: transparent;
+  text-decoration: none;
+}
+
+
+
+/* Used as guidelines, after use it is commonly deleted or commented out */
+/* .header, .header * {
+    outline: green dashed 1px;
+} */
+
+body {
+  background: radial-gradient(circle, rgb(12, 47, 48) 0%, rgb(0, 0, 0) 100%);
+}
+
+.header {
+  display: flex;
+  background: transparent;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+  height: 10dvh;
+  position:fixed;
+  z-index: 100;
+
+  .logo {
+    display: flex;
+    width: 7rem;
+  }
+
+  .left-header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+  }
+}
+
+.btn {
+  padding: 0.7rem 1.7rem;
+
+  &.nav-btn {
+    /* outline: 3px dotted green; */
+    height: 10dvh;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px transparent solid;
+
+    transition: all ease 1s;
+
+    &.active {
+      border-bottom: 2px gray solid;
+      transform: scale(1.05);
+    }
+
+    &:hover {
+      border-bottom: 2px gray solid;
+      background-color: gray;
+
+      p {
+        color: black;
+      }
+    }
+  }
+
+  
+}
+
+.hero {
+  height: calc(50dvh - 16rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+
+  .video-container{
+    width: 110%;
+    height: 120dvh;
+  }
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background-color: #000;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;.video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      background-color: #000;
+  }
+  
+  .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+  
+
+
+  h4 {
+    font-size: 7rem;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 2rem;
+  }
+
+  .separator {
+    margin: 3rem 0;
+    border: 1px aquamarine solid;
+    width: 10%;
+  }
+
+  .description {
+    line-height: 2.5rem;
+    margin-bottom: 5rem;
+  }
+}
+}}
